@@ -56,3 +56,6 @@ Marke sure you've installed [*sparql-client*](https://github.com/ruby-rdf/sparql
 * Implement `find` for known resources
 * Gemify
 
+## Specs
+
+Run `$ bundle exec rspec -c`
