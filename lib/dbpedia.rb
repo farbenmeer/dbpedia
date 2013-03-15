@@ -2,7 +2,7 @@ require 'yaml'
 
 module Dbpedia
 
-  File.open('config/dbpedia.yml') do |file|
+  File.open(File.expand_path('../../config/dbpedia.yml', __FILE__)) do |file|
     Dbpedia::Config = YAML::load(file)['dbpedia']
   end
 

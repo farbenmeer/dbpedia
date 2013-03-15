@@ -59,3 +59,9 @@ Marke sure you've installed [*sparql-client*](https://github.com/ruby-rdf/sparql
 ## Specs
 
 Run `$ bundle exec rspec -c`
+
+## Gloss
+
+Copyright © 2013 [Roman Ernst](http://wanderwort.de), released under [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) license
+
+.. without warranty of any kind!
