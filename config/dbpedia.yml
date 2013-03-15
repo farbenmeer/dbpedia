@@ -1,0 +1,9 @@
+dbpedia:
+  uris:
+    search:
+      keyword: 'http://lookup.dbpedia.org/api/search.asmx/KeywordSearch'
+      prefix: 'http://lookup.dbpedia.org/api/search.asmx/PrefixSearch'
+    sparql: 'http://dbpedia.org/sparql'
+  params:
+    query_class: QueryClass
+    query_string: QueryString
