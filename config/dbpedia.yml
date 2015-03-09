@@ -7,3 +7,4 @@ dbpedia:
   params:
     query_class: QueryClass
     query_string: QueryString
+    max_hits: MaxHits

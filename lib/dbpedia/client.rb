@@ -13,11 +13,13 @@ module Dbpedia
     # Possible keys for _opts_:
     # * *search_method*: Either *keyword_search* (default) or *prefix_search*
     # * *query_class*: A DBpedia class that defines a search scope
+    # * *max_hits*: The number of maximum results
     def search(query, opts={})
       search_method = (opts[:method] || :keyword).to_s
       result = request @uris['search'][search_method] do |params|
         params.query_class = opts[:query_class] if opts.has_key?(:query_class)
         params.query_string = query
+        params.max_hits = opts[:max_hits] if opts.has_key?(:max_hits)
       end
       Dbpedia::SearchResult.load_many_from(result)
     end
