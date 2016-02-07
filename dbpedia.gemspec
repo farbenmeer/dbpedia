@@ -15,4 +15,9 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '>= 1.9.2'
 
   s.add_dependency 'nokogiri', '>= 1.5.5'
+
+  s.add_development_dependency 'bundler', '>= 1.3.0', '< 2.0'
+  s.add_development_dependency 'rake', '~> 10.0'
+  s.add_development_dependency 'rspec'
+  s.add_development_dependency 'sparql-client', '< 2.0'
 end
