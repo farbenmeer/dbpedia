@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.platform      = Gem::Platform::RUBY
   s.name          = 'dbpedia'
-  s.version       = '0.0.1'
+  s.version       = '0.0.2'
   s.summary       = 'DBpedia Client for Ruby'
   s.description   = 'Simple search for DBpedia resources. Optional support for sparql.'
 
