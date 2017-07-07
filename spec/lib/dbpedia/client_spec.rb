@@ -53,7 +53,7 @@ describe Dbpedia::Client do
     it 'should return the correct categories' do
       cats = @client.search('Pete Sampras').first.categories
       cats.should be_an_instance_of(Array)
-      cats.should have(17).items
+      cats.should have(18).items
     end
 
     it 'should return categories with correct attributes' do
