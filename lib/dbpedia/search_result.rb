@@ -5,10 +5,11 @@ module Dbpedia
     require 'dbpedia/search_result/category'
     require 'dbpedia/search_result/klass'
 
-    attr_accessor :label, :uri, :description, :label, :categories, :classes
+    attr_accessor :refcount, :label, :uri, :description, :label, :categories, :classes
 
     def parse
       self.tap do |obj|
+        obj.label = read '> RefCount'
         obj.label = read '> Label'
         obj.uri = read '> URI'
         obj.description = read '> Description'
